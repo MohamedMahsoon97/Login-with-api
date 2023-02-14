@@ -1,0 +1,63 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid #eee; */
+    height: 600px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.profile-title{
+    margin: 20px;
+}
+.profile img{
+    width: 170px;
+    height: 170px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 20px;
+}
+.profile-name{
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.profile-phone{
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.profile-email{
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.update-btn{
+    border: none;
+}
+.update-form{
+    padding: 20px;
+}

@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "1d5bc464-3c47-4bf7-8c8e-dd30691a5f9d",
+		"name": "Fatoorah-Pos Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18396000"
+	},
+	"item": [
+		{
+			"name": "Shift",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "asfasdf@gmail.com",
+									"description": "email or name",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{urlPos}}/login"
+					},
+					"response": []
+				},
+				{
+					"name": "shiftReport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmVjODQyYzkxOTM2YWZhYzFiYTE0ZjkyYWQ1YmQ1YjAwNDJlZTMwYzJhMWQ2MmQ1MjYzZTBmYTU0ODEzY2I2OTBiYTMwMmQzMWE3OTdmM2YiLCJpYXQiOjE2Mjc5ODQwNTAsIm5iZiI6MTYyNzk4NDA1MCwiZXhwIjoxNjU5NTIwMDUwLCJzdWIiOiI4Iiwic2NvcGVzIjpbXX0.G5bkb7iQ79BkRV0B-tN8cNohlEkdnbrxVKC5UndM6q-08SYid23XeLIqRfaOwyky7cu-w-XdQufLq6szyQJmD3Li2_vgthbyWcUkI6LCNmp1Jz8mVm32A0vJXND-79o-y4Jq6Rob9_vUQAYZ64elRLdAhejPCV5HH2uwHpFo60J68NIwLhEKIymenSU9JNig2zL6mEKKIVUIpW3RnG-GyHTFUmfBWnuHwitBc8knQCGOg1ThWzm55eF6Y2t8U0kqGtBUH-BgwYLyqk9-WcTBiNmSKHoHSJX-d-l6_gO7psDADEljIKcAcbTcF5_GC_NWf7W2NFwMouhet0ON7OGZEEWvbAkp2xDD7NXCs4877_gwSolnxvfh7O3Df79Rxb9pNfOSdD_ijqyLn4hW9_ALenSy3eBbESnw5LpOMcy6Zl7REppZmBhmvsg6hpdeNA4lW1-mG379wLDeOLQNYwkMSnSKkcbH6qdoitQ1jVdfLNGNfwPa2UToZ_TUpceM-iifbgdzgFAHPgSINL9homLFqPQOCUXZTosKREwEGe2HCmlO2ElCAyebDsit0TpS0OmS_KgfahOy64OTrwDNTvV8RqahlbyMH6v7yPqKWPz3YzuFZMmiAs35RhgkSTCmrSPMWdeQsX1SG4n7iqL8yUHsQbwpKRXnI50Dx-GryrDNxiw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{urlPos}}/shiftReport"
+					},
+					"response": []
+				},
+				{
+					"name": "logout or logout and end shift",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTdmMjU2NjU3YmE0ZGJkYmNjMGY4NmY3ZjA4YWQxNTIzOGVlNWE4OTg4MjNjNzZlZmQ2ZmUxZTA3OGQ0ZWViZWMyMjdlZGNmMjk5YTcxNTMiLCJpYXQiOjE2Mjc4MjM5NTksIm5iZiI6MTYyNzgyMzk1OSwiZXhwIjoxNjU5MzU5OTU5LCJzdWIiOiI4Iiwic2NvcGVzIjpbXX0.dB7P55IpHXvvHrPiVoy8y9rSaQIdQeVFzpyYXzCrwpBYEnoxTVLQVykBL228MTV0UKBGDhTi8SSmoivHx8qPEmD5qkUOYLd5YnryOuyzHRFbF7n55xwV_TlufcDKBLYB75ljE57hGkCyciHh0o1BjkFolM3A9MfyFsIs_g5Zbz4Ql-Ssxjz8ra9kqdPG2fHWYXShNfB_q1SgAa2PQufLpc1P2PXpif0tJ2mcAGFZp-FLv7PRMaGCZMeLJoheoMgPi1qaR1ByYbQYZ040YF_4uLbD_zHGykYfOEiLZZd77S4mh4ooZ1wrtiEb2fMtXFE-BzYRCaTKkVjXbZi12p4eNGovVN4laUmM4sXuMqvgnoLBOkqifNuT70wLbfyAidv8Ed-ctFBpcZuhLvLSObrlGbLuPTWTK1lRTtVpiEVc81n_YbgCmJaG2yVHrhf9SMSXxie9bjKsJVI89csa9Upy47Z-UMl5zhWXlLjpZzo2FZzBwX7O25qyDRq-ZKJcBp5cyxrHVTHdCP98XXpTwGiz0GforNwBtUGTLSDFyOEzMOIGTlb1XqEY4wvuRPTzia7qQzJ7rrwemtHy6HIhDxSOMoZD4TE-zOlYmXrKvY1erB_reIJMIAV4OlM5RsX69JS2f2FebnJK6lx0U94gpHIcY_iyJADAJgBBQZwO4ElVUJY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "endShift",
+									"value": "1",
+									"description": "in end shift",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{urlPos}}/logout"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
